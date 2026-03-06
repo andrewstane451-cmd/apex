@@ -243,7 +243,9 @@ const Dashboard = () => {
             {/* Wallet card */}
             <div className="flex gap-3 mb-6">
               <div className="flex-1 bg-card rounded-2xl p-5 border border-border">
-                <div className="text-2xl mb-1">🇺🇸</div>
+                 <div className="w-6 h-6 rounded-full overflow-hidden border border-border flex-shrink-0">
+              <img src="https://flagcdn.com/w80/us.png" alt="USD" className="w-full h-full object-cover" />
+              </div>
                 <p className="text-2xl font-bold text-foreground mt-3">
                   {currentAccount?.balance?.toFixed(2) ?? "0.00"}
                 </p>
